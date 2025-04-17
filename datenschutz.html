@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Datenschutzerklärung - ciphereon Cloud Security Solutions Berlin" />
+    <title>Datenschutzerklärung | ciphereon Cloud Security Solutions Berlin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #38bdf8;
+            --secondary-color: #818cf8;
+            --text-primary: #e2e8f0;
+            --text-secondary: #cbd5e1;
+            --bg-dark: #0f172a;
+            --bg-dark-secondary: #1e293b;
+            --font-primary: 'Inter', sans-serif;
+            --font-secondary: 'Poppins', sans-serif;
+            --border-radius: 8px;
+            --box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            --transition: all 0.3s ease-in-out;
+        }
+
+        body {
+            margin: 0;
+            font-family: var(--font-primary);
+            background-color: var(--bg-dark);
+            color: var(--text-primary);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.2s ease-in-out;
+        }
+
+        a:hover {
+            color: var(--secondary-color);
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--bg-dark-secondary), var(--bg-dark));
+            padding: 60px 30px 40px;
+            text-align: center;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 25px;
+        }
+
+        .logo-svg {
+            width: 50px;
+            height: 50px;
+            filter: drop-shadow(0 6px 8px rgba(0, 0, 0, 0.2));
+        }
+
+        .brand-name {
+            font-family: var(--font-secondary);
+            font-size: 2.2rem;
+            color: #ffffff;
+            letter-spacing: 1px;
+            margin: 0 0 0 15px;
+            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .page-title {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-top: 20px;
+            color: var(--primary-color);
+        }
+
+        .content {
+            padding: 60px 30px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            font-size: 1.6rem;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid var(--bg-dark-secondary);
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            color: var(--primary-color);
+            font-size: 1.3rem;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        p, ul, ol {
+            margin-bottom: 20px;
+            color: var(--text-secondary);
+        }
+
+        ul, ol {
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 40px;
+            padding: 10px 20px;
+            background-color: var(--bg-dark-secondary);
+            border-radius: var(--border-radius);
+            transition: var(--transition);
+        }
+
+        .back-link:hover {
+            background-color: rgba(56, 189, 248, 0.1);
+        }
+
+        footer {
+            background-color: var(--bg-dark-secondary);
+            color: var(--text-secondary);
+            text-align: center;
+            padding: 40px 30px;
+            font-size: 0.9rem;
+            border-top: 1px solid #2d3748;
+        }
+
+        footer a {
+            color: var(--primary-color);
+        }
+    </style>
+
+<script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
+    import { getAnalytics, isSupported } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-analytics.js";
+  
+    const firebaseConfig = {
+      apiKey: "AIzaSyDzLIGQ5kX06n9bbJwJ8nQTmQPSbOBWANU",
+      authDomain: "ciphereonde.firebaseapp.com",
+      projectId: "ciphereonde",
+      storageBucket: "ciphereonde.appspot.com",
+      messagingSenderId: "943286676999",
+      appId: "1:943286676999:web:6f8b65cca03ad6032584a2",
+      measurementId: "G-JRZPFCJCPF"
+    };
+  
+    const app = initializeApp(firebaseConfig);
+  
+    // Only get analytics if supported (avoids errors in non-browser contexts)
+    if (await isSupported()) {
+      const analytics = getAnalytics(app);
+      console.log("Firebase Analytics initialized");
+    } else {
+      console.warn("Analytics not supported in this context.");
+    }
+  </script>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="index.html">
+                <img class="logo-svg" src="logo.svg" alt="ciphereon Cloud Security Logo Berlin" />
+            </a>
+            <h1 class="brand-name">ciphereon</h1>
+        </div>
+        <h2 class="page-title">Datenschutzerklärung</h2>
+    </header>
+
+    <div class="content">
+        <div class="section">
+            <h2>1. Datenschutz auf einen Blick</h2>
+            <h3>Allgemeine Hinweise</h3>
+            <p>Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie unsere Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können. Ausführliche Informationen zum Thema Datenschutz entnehmen Sie unserer unter diesem Text aufgeführten Datenschutzerklärung.</p>
+
+            <h3>Datenerfassung auf unserer Website</h3>
+            <p><strong>Wer ist verantwortlich für die Datenerfassung auf dieser Website?</strong></p>
+            <p>Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Impressum dieser Website entnehmen.</p>
+
+            <p><strong>Wie erfassen wir Ihre Daten?</strong></p>
+            <p>Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z.B. um Daten handeln, die Sie in ein Kontaktformular eingeben.</p>
+            <p>Andere Daten werden automatisch beim Besuch der Website durch unsere IT-Systeme erfasst. Das sind vor allem technische Daten (z.B. Internetbrowser, Betriebssystem oder Uhrzeit des Seitenaufrufs). Die Erfassung dieser Daten erfolgt automatisch, sobald Sie unsere Website betreten.</p>
+
+            <p><strong>Wofür nutzen wir Ihre Daten?</strong></p>
+            <p>Ein Teil der Daten wird erhoben, um eine fehlerfreie Bereitstellung der Website zu gewährleisten. Andere Daten können zur Analyse Ihres Nutzerverhaltens verwendet werden.</p>
+
+            <p><strong>Welche Rechte haben Sie bezüglich Ihrer Daten?</strong></p>
+            <p>Sie haben jederzeit das Recht unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten zu erhalten. Sie haben außerdem ein Recht, die Berichtigung, Sperrung oder Löschung dieser Daten zu verlangen. Hierzu sowie zu weiteren Fragen zum Thema Datenschutz können Sie sich jederzeit unter der im Impressum angegebenen Adresse an uns wenden. Des Weiteren steht Ihnen ein Beschwerderecht bei der zuständigen Aufsichtsbehörde zu.</p>
+        </div>
+
+        <div class="section">
+            <h2>2. Allgemeine Hinweise und Pflichtinformationen</h2>
+            <h3>Datenschutz</h3>
+            <p>Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.</p>
+            <p>Wenn Sie diese Website benutzen, werden verschiedene personenbezogene Daten erhoben. Personenbezogene Daten sind Daten, mit denen Sie persönlich identifiziert werden können. Die vorliegende Datenschutzerklärung erläutert, welche Daten wir erheben und wofür wir sie nutzen. Sie erläutert auch, wie und zu welchem Zweck das geschieht.</p>
+            <p>Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommun
+
+
+                <div class="nav-links">
+                    <a href="index.html">Back to Home</a> 
+                </div>
