@@ -1,14 +1,13 @@
 :root {
-    --primary-color: #38bdf8;
+    --primary-color: #4883C4;
     --secondary-color: #818cf8;
     --text-primary: #e2e8f0;
-    --text-secondary: #cbd5e1;
-    --bg-dark: #0f172a;
+    --text-secondary: #18284A;
+    --bg-dark: #F3F4F6;
     --bg-dark-secondary: #1e293b;
     --font-primary: "Inter", sans-serif;
     --font-secondary: "Poppins", sans-serif;
-    --border-radius: 8px;
-    --box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    --border-radius: 8px; 
     --transition: all 0.3s ease-in-out;
   }
   
@@ -33,7 +32,7 @@
   }
   
   header {
-    background: linear-gradient(135deg, var(--bg-dark-secondary), var(--bg-dark));
+
     padding: 90px 30px 60px;
     text-align: center;
   }
@@ -91,6 +90,7 @@
     padding: 30px 30px;
     max-width: 1200px;
     margin: auto;
+    
   }
   
   .section-title {
@@ -119,7 +119,7 @@
   }
   
   .service-card {
-    background-color: var(--bg-dark-secondary);
+    background-color: #fff;
     padding: 35px;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
@@ -215,4 +215,27 @@
   footer a {
     color: var(--primary-color);
   }
-  
+  @font-face {
+    font-family: 'Avenir Black';
+    src: local('Avenir Black'), local('Avenir-Black');
+    font-weight: 900;
+  }
+
+ 
+
+  .logo {
+    font-size: 60px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-family: 'Avenir Black', sans-serif;
+  }
+
+  .ciph {
+    color: #18284A;
+    font-family: 'Avenir Black', sans-serif;
+  }
+
+  .symbol {
+    color: #4883C4;
+    font-family: 'Avenir Black', sans-serif;
+  }
